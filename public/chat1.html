@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>23Chat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <center><h3><br>ห้องพูดคุยรวม</h3><br></center>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <h3 class="col-6 changename">นิรนาม</h3>
+            <h4 class="col-6"><button type="button" class="btn btn-danger" style="float: right;" onclick="location.href='index.html'">กลับหน้าหลัก</button></h4>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="เปลี่ยนชื่อ"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-warning" type="button" id="usernameBtn">
+                ยืนยัน
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-box">
+          <ul class="list-group list-group-flush" id="message-list"></ul>
+          <div class="info"></div>
+        </div>
+
+        <div class="card-footer">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="message"
+              placeholder="พิมพ์อะไรสักหน่อย..."
+            />
+            <div class="input-group-append">
+              <button class="btn btn-success" type="button" id="messageBtn">
+                ส่งข้อความ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.5.0/socket.io.js" integrity="sha512-ttqbKrGZiTtSLguBZ2xNvZrhUv02IO/TRq5U6TG5TK90wbaXWup5kIJ1A1tLzjOk5Mea/G4seVNrU+lwTLfAzA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="/js/chatroom.js"></script>
+  </body>
+</html>

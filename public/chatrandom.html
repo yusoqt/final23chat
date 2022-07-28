@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23Chat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/index/index.css">
+    <script src="https://cdn.socket.io/4.2.0/socket.io.min.js" integrity="sha384-PiBR5S00EtOj2Lto9Uu81cmoyZqR57XcOna1oAuVuIEjzj0wpqDVfD0JA9eXlRsj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <header>
+        <h1>23Chat - Random</h1>
+        <button type="button" class="btn btn-danger" onclick="location.href='index.html'">กลับหน้าหลัก</button>
+    </header>
+    <main>
+        <div class="group-id-wrapper">
+            <p class="group-id"></p>
+        </div>
+        <div class="chat-container">
+            <div class="chat-window">
+                <ul class="chat-list"></ul>
+            </div>
+            <div class="chat-form">
+                <input type="text" name="message" placeholder="พิมพ์อะไรสักหน่อย..." class="message-input form-input" required>
+                <button class="send-message-btn button-23">ส่ง</button>
+            </div>
+        </div>
+        <div class="no-other-user">
+            <div class="loader-outside">
+                <div class="loader-inside"></div>
+            </div>
+            <p id="waiting_message">กำลังรอคู่สนทนา...</p>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.5.0/socket.io.js" integrity="sha512-ttqbKrGZiTtSLguBZ2xNvZrhUv02IO/TRq5U6TG5TK90wbaXWup5kIJ1A1tLzjOk5Mea/G4seVNrU+lwTLfAzA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="/js/chatrandom.js"></script>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "pjcom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-pino-logger": "^7.0.0",
+    "nodemon": "^2.0.19",
+    "pino": "^8.3.1",
+    "pino-pretty": "^8.1.0",
+    "socket.io": "^4.5.1"
+  }
+}
